@@ -1,6 +1,6 @@
-package com.wfw.ribbon.consumer.controller;
+package com.wfw.feign.consumer.controller;
 
-import com.wfw.ribbon.consumer.service.HelloService;
+import com.wfw.feign.consumer.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,7 +15,7 @@ public class HelloController {
     @Autowired
     private HelloService helloService;
 
-    @RequestMapping(value = "/hello-ribbon", method = RequestMethod.GET)
+    @RequestMapping(value = "/hello-feign", method = RequestMethod.GET)
     public String hello(@RequestParam String name) {
         return this.helloService.hello(name);
     }
