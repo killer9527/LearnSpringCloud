@@ -9,7 +9,12 @@ feign:
   hystrix:
     enabled: true
 
+hystrix:
+  metrics:
+    enabled: true
+
 spring:
   application:
     name: feign-consumer
+
 
