@@ -5,6 +5,11 @@ eureka:
 server:
   port: 8765
 
+feign:
+  hystrix:
+    enabled: true
+
 spring:
   application:
     name: feign-consumer
+
