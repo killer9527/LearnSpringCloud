@@ -31,6 +31,5 @@ public class WfwFeignConsumerApplication {
 		registrationBean.addUrlMappings("/hystrix.stream");
 		registrationBean.setName("HystrixMetricsStreamServlet");
 		return registrationBean;
-
 	}
 }
