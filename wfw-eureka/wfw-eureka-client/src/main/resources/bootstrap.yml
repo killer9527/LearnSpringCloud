@@ -6,6 +6,3 @@ spring:
       label: master
       profile: dev
       uri: http://localhost:8760
-# 为了测试方便，通过修改port可以启动多个服务，端口配置写在此处
-server:
-  port: 8769
