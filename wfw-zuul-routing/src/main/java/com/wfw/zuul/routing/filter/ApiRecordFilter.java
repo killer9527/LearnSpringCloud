@@ -61,6 +61,7 @@ public class ApiRecordFilter extends ZuulFilter {
         ctx.getResponse().setCharacterEncoding("gbk");
         HttpServletRequest request = ctx.getRequest();
         this.logger.info(String.format("%s >>> %s", request.getMethod(), request.getRequestURL().toString()));
+        /** 权限验证
         String token = request.getParameter("token");
         if (StringUtils.isEmpty(token)){
             this.logger.warn("token为空");
@@ -72,6 +73,7 @@ public class ApiRecordFilter extends ZuulFilter {
                 e.printStackTrace();
             }
         }
+         **/
         return null;
     }
 }
