@@ -9,6 +9,11 @@ server:
 spring:
   application:
     name: zuul-routing
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 zuul:
   routes:
@@ -18,3 +23,8 @@ zuul:
     api-feign:
       path: /api-feign/**
       serviceId: feign-consumer
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health","info","bus-refresh"]
