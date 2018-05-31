@@ -18,3 +18,8 @@ zuul:
     api-feign:
       path: /api-feign/**
       serviceId: feign-consumer
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health","info","bus-refresh"]
