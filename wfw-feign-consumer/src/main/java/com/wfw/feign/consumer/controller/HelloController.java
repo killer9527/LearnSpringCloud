@@ -19,4 +19,9 @@ public class HelloController {
     public String hello(@RequestParam String name) {
         return this.helloService.hello(name);
     }
+
+    @RequestMapping(value = "/version-feign", method = RequestMethod.GET)
+    public String version(){
+        return this.helloService.version();
+    }
 }

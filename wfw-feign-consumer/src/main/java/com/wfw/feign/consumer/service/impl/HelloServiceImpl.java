@@ -17,4 +17,9 @@ public class HelloServiceImpl implements HelloService {
     public String hello(String name) {
         return this.scheduledServiceHello.hello(name);
     }
+
+    @Override
+    public String version() {
+        return this.scheduledServiceHello.version();
+    }
 }

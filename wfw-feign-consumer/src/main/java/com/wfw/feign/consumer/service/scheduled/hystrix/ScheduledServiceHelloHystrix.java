@@ -13,4 +13,9 @@ public class ScheduledServiceHelloHystrix implements ScheduledServiceHello {
     public String hello(@RequestParam(value = "name") String name) {
         return "sorry " + name;
     }
+
+    @Override
+    public String version() {
+        return "no version info";
+    }
 }

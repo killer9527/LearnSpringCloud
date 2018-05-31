@@ -17,4 +17,7 @@ public interface ScheduledServiceHello {
 
     @RequestMapping(value = "/service/hello", method = RequestMethod.GET)
     String hello(@RequestParam(value = "name") String name);
+
+    @RequestMapping(value = "/service/version", method = RequestMethod.GET)
+    String version();
 }

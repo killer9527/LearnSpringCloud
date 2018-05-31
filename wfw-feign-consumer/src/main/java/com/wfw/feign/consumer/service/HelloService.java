@@ -5,4 +5,6 @@ package com.wfw.feign.consumer.service;
  */
 public interface HelloService {
     String hello(String name);
+
+    String version();
 }
