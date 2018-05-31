@@ -17,4 +17,8 @@ spring:
   application:
     name: feign-consumer
 
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health","info","bus-refresh"]
