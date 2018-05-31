@@ -16,6 +16,9 @@ public class WfwEurekaClientApplication {
     @Value("${server.port}")
     private String port;
 
+    @Value("${application.version}")
+    private String version;
+
     public static void main(String[] args) {
         SpringApplication.run(WfwEurekaClientApplication.class, args);
     }
@@ -23,5 +26,10 @@ public class WfwEurekaClientApplication {
     @RequestMapping("/service/hello")
     public String home(@RequestParam String name) {
         return "hi " + name + ",i am from port:" + port;
+    }
+
+    @RequestMapping("/service/version")
+    public String version(){
+        return this.version;
     }
 }

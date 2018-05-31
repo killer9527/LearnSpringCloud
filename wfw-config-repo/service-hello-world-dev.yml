@@ -1,3 +1,6 @@
+application:
+  version: 1.0
+
 eureka:
   client:
     service-url:
@@ -8,4 +11,9 @@ server:
 spring:
   application:
     name: service-hello-world
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
