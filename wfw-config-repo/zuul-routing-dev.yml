@@ -15,7 +15,8 @@ spring:
     username: guest
     password: guest
   zipkin:
-    base-url: http://localhost:8770
+    service:
+      name: zipkin-server
 
 zuul:
   routes:
