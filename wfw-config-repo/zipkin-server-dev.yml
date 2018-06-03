@@ -1,30 +1,21 @@
 eureka:
   client:
-    service-url:
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 server:
-  port: 8764
+  port: 8770
 
 spring:
   application:
-    name: ribbon-consumer
+    name: zipkin-server
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
 
-hystrix:
-  metrics:
-    enabled: true
 management:
   endpoints:
     web:
       exposure:
         include: ["health","info","bus-refresh"]
-        
-#zipkin≈‰÷√        
-spring:
-  zipkin:
-    service:
-      name: zipkin-server

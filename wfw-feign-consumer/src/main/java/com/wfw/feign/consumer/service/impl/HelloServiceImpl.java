@@ -15,7 +15,7 @@ public class HelloServiceImpl implements HelloService {
 
     @Override
     public String hello(String name) {
-        return this.scheduledServiceHello.hello(name);
+        return "feign service: " + this.scheduledServiceHello.hello(name);
     }
 
     @Override

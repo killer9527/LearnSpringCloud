@@ -27,3 +27,9 @@ management:
     web:
       exposure:
         include: ["health","info","bus-refresh"]
+        
+#zipkin≈‰÷√        
+spring:
+  zipkin:
+    service:
+      name: zipkin-server
