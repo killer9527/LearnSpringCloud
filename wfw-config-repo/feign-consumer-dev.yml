@@ -21,15 +21,12 @@ spring:
     port: 5672
     username: guest
     password: guest
+  zipkin:
+    service:
+      name: zipkin-server
 
 management:
   endpoints:
     web:
       exposure:
         include: ["health","info","bus-refresh"]
-        
-#zipkin≈‰÷√        
-spring:
-  zipkin:
-    service:
-      name: zipkin-server
