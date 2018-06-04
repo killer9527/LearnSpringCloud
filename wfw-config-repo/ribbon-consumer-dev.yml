@@ -14,8 +14,15 @@ spring:
     username: guest
     password: guest
   zipkin:
-    service:
-      name: zipkin-server
+    sender:
+      type: web
+    base-url: http://localhost:8770
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0
 
 hystrix:
   metrics:
