@@ -25,6 +25,12 @@ spring:
     sender:
       type: web
     base-url: http://localhost:8770
+  sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      probability: 1.0
 
 management:
   endpoints:
