@@ -16,7 +16,7 @@ spring:
   zipkin:
     sender:
       type: web
-    baseUrl: http://zipkin-server
+    base-url: http://localhost:8770
   sleuth:
     web:
       client:
