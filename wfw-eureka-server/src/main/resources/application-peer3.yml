@@ -8,6 +8,7 @@ server:
 
 eureka:
   instance:
+# 需修改本机C:\Windows\System32\drivers\etc\hosts文件，添加 127.0.0.1       eureka-server-peer3
     hostname: eureka-server-peer3
   client:
 #通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server

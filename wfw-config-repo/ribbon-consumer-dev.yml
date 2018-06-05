@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://peer1:8761/eureka/
+      defaultZone: http://eureka-server-peer1:8761/eureka/,http://eureka-server-peer2:8762/eureka/,http://eureka-server-peer3:8759/eureka/
 server:
   port: 8764
 
